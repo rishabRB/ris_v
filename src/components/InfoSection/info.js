@@ -4,24 +4,23 @@ import styled from 'styled-components'
 
 const InfoContianer=styled.div`
 color:#fff;
+height:860px;
+width:100%;
+padding: 30px;
 background:${({lightBg})=>(lightBg ? '#010606' : '#f9f9f9')};
 padding-bottom: 50px;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
- 
+box-sizing:border-box;
+
 @media screen and (max-width:760px){
 
-    padding:100px 0;
-    }`;
+padding:100px 0;
+}
+`;
 
-   
+
 const InfoWrapper=styled.div`
 display:grid;
 z-index:1;
-height:860px;
-width:100%;
-max-width:1100px;
 margin-right:auto;
 margin-left:auto;
 padding:0 24px;

@@ -13,24 +13,26 @@ display:none;
 @media screen and (max-width:760px){
 position: fixed;
 z-index:999; 
-width:100%;                                
-height: 100%;
+width:100%;
+height:100%;
 background: #0d0d0d;
 display: grid;
 align-items: center;
-top: 0;
-left: 0;
 transition:0.3s ease-in-out;
 opacity: ${({isOpen})=>(isOpen ? '100%' : '0')};        
 top:${({isOpen})=>(isOpen ? '0' : '-100%')};
 }
 `;
 
+const Wrapper=styled.div`
+padding:100px;
+box-sizing:border-box
+`
 
 const Icon=styled.div`
  position: absolute;
- top:1.2rem;
- right: 1.5rem;
+ top:30px;
+ right:30px;
  background:transparent;
  font-size: 2rem;
  cursor: pointer;
@@ -113,7 +115,8 @@ const SidebarBtnLink=styled(LinkR)`
 const SideBar=({isOpen,toggle})=>{
     return (
       
-        <SideBarContainer isOpen={isOpen} onClick={toggle}>         
+        <SideBarContainer isOpen={isOpen} onClick={toggle}>  
+          <Wrapper>       
             <Icon >
                 <CloseIcon />
             </Icon>                                   
@@ -127,6 +130,7 @@ const SideBar=({isOpen,toggle})=>{
                     <SidebarBtnLink to="/">Send Email</SidebarBtnLink>
                 </SideBarBtn>
             </SideBarWrapper>
+            </Wrapper>
         </SideBarContainer>
      
        

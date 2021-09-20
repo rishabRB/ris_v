@@ -7,16 +7,17 @@ import {SiJavascript,SiMongodb } from 'react-icons/si';
 
 const AboutSectionWrapper=styled.div`
 background:#010606 ;
-padding-top:300px;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+width: 100%;
+height:800px;
+padding:0 40px;
+box-sizing:border-box;
 
 
 
 @media screen and (max-width:760px){
 
-padding:100px 0;
+box-sizing: border-box;
+
 }`;
 
 
@@ -24,8 +25,8 @@ padding:100px 0;
 
 const Wrapper=styled.div`
 width: 100%;
-height:668px;
-padding: 20px;
+height:100%;
+padding:20px;
 margin-left:auto ;
 margin-right: auto;
 display: flex;
@@ -42,7 +43,7 @@ flex-direction: row-reverse;
 const ImageSection=styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
-max-width:555px;
+width:100%;
 height: 100%;
 margin-right:20px;
 
@@ -68,29 +69,28 @@ padding-right: 0;
 
 const AboutSection=styled.div`
 padding: 0 15px;
-max-width:440px;
+width:100%;
 height: 100%;
-margin-left: 10px;
+margin-left:-10px;
 justify-content: center;
 align-items: center;
 margin-bottom: 15px;
-margin-left:50px;
-
 `
 
 
 const AboutParagaphWrappe=styled.div`
 color:#fff;
-max-width:540px;
+width:100%;
 padding-top:0;
 padding-bottom:60px;
+box-sizing: border-box;
 
 
 
 
 `
 const HeadingWrapper=styled.div`
-width:540px;
+width:50%;
 font-size:${({size})=>(size ? size : '14px')};
 margin:10px;
 
@@ -123,7 +123,7 @@ font-style: italic;
 
 
 const IconWrapperSection=styled.div`
-max-width:300px;
+width:75%;
 color:#fff;
 display: flex;
 flex-direction: row;

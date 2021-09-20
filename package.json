@@ -2,7 +2,7 @@
   "name": "rport",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://rishabrb.github.io/portfolioRis_v/",
+  "homepage":"https://rishabrb.github.io/ris_v/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

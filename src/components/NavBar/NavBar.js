@@ -9,10 +9,13 @@ import {FaBars} from 'react-icons/fa';
 
 
 
-const Nav=styled.nav`               //green color code :#01bf71
+const Nav=styled.nav`
+width:100%;
+padding-left:200px;
 background:#000;
 height: 80px;
 margin-top:-80px;
+box-sizing:border-box;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -23,7 +26,14 @@ z-index: 10;
 
 @media screen and (max-width:960px){
     transition: 0.8s all ease;
+    padding-left: 100px;
 }
+
+@media screen and (max-width:760px){
+    transition: 0.8s all ease;
+    padding-left:20px;
+}
+
 `;
 
 
@@ -33,8 +43,10 @@ justify-content: space-between;
 height: 80px;
 z-index:1;
 width: 100%;
-padding: 0 240px;
-max-width:1100px;
+padding:0 160px;
+box-sizing: border-box;
+
+
 `;
 
 
@@ -104,12 +116,13 @@ cursor: pointer;
 `;
 
 
-const NavBtn=styled.nav`
+const NavBtn=styled.div`
 display: flex;
 align-items: center ;
-margin-right: -200px;
+justify-content: center;
 text-transform: uppercase;
 font-weight: 600;
+
 
 
 @media screen and (max-width:768px){
@@ -131,6 +144,7 @@ const NavBtnLink=styled(LinkR)`
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease-in-out;
+ 
 
 
  
