@@ -16,7 +16,7 @@ const CustomSectionWrapper=styled.div`
  width:95%;
  height:90%;
  background:#0d0d0d;
- margin: 40px;
+ margin:30px;
  display:grid;
  opacity: ${({isShow})=>(isShow ? '100%' : '0')};       //use this for slide down effect otherwise use conditional rendering  
  top:${({ isShow})=>(isShow ? '0' : '-100%')};

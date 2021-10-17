@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import MainSection from '../components/MainSection/MainSection';
+import { maindata } from '../components/MainSection/maindata';
 import InfoSection from '../components/InfoSection/info';
 import NavBar from '../components/NavBar/NavBar'
 import SideBar from '../components/SideBar/sidebar';
@@ -33,7 +34,7 @@ return (
      <>
         <NavBar toggle={toggle} />
         <SideBar isOpen={isOpen} toggle={toggle} />         
-        <MainSection />
+        <MainSection {...maindata}/>
         <InfoSection {...homeObjOne} toggle={toggleProject}/>
         <InfoSection {...homeObjTwo} toggle={toggleCertificate}/>
         <CustomSection name="Projects" toggle={toggleProject} isShow={isProject} Data={ProjectData}/>

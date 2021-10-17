@@ -5,9 +5,9 @@ import Button from '../Buttons/buttonA';
 
 
 const CustomWrapper=styled.div`
-    width:94%;
+    width:90%;
     height:40%;
-    margin-left:40px;
+    margin-left:8px;
     border-bottom: 1px solid #fff;
     margin-top:130px;
     display:flex;
@@ -31,23 +31,23 @@ const ImageWrapper=styled.div`
     justify-content: center;
     width:100%;
     height:300px;
-    margin-left:-100px;
+    margin-left:-80px;
 
     @media screen and (max-width:950px){
      margin-top:60px;
-     margin-left:80px;
+     margin-left:100px;
     }
     
     @media screen and (max-width:760px){
     width: 100%;
     height: 100%;
-    margin-left: 0;
+    margin-left:40;
     }
 
     @media screen and (max-width:468px){
-    width:100%;
+    width:250px;
     height:300px;
-    margin-left:-10px;
+    margin-left:60px;
     }
 
 `;
@@ -55,7 +55,7 @@ const ImageWrapper=styled.div`
 const Image=styled.img`
 width: 450px;
 height:250px;
-margin: 0 0 10px 0;
+margin: 0 0 10px 0 ;
 padding-right:0;
 border: 3px solid #fff;
 
@@ -67,13 +67,14 @@ border: 3px solid #fff;
 @media screen and (max-width:950px){
     width:350px;
     height:250px;
-    margin-top:-50px;
+    margin:-50px 0 0 0;
+
 }
 
 @media screen and (max-width:468px){
-    width:375px;
+    width:325px;
     height:70%;
-    margin:10px;
+    margin:0px;
     opacity: 0.3;
 }
 
@@ -85,7 +86,7 @@ display:none;
 
 @media screen and (max-width:468px){
     display: flex;
-    width: 100px;
+    width: 250px;
     height: 300px;
     z-index:83;
     position: absolute;
@@ -104,7 +105,6 @@ const MobileNameWrapper=styled.div`
  
 justify-content: center;
 align-items: center;
-width:50%;
 margin-bottom: 20px;
 `;
 
@@ -112,9 +112,6 @@ const MobileBtnWrapper=styled.div`
 
 justify-content: center;
 align-items: center;
-width:50%;
-margin-right:150px;
-
 `;
 
 

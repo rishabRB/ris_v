@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const InfoContianer=styled.div`
 color:#fff;
-height:860px;
+height:800px;
 width:100%;
 padding: 30px;
 background:${({lightBg})=>(lightBg ? '#010606' : '#f9f9f9')};
@@ -14,17 +14,23 @@ box-sizing:border-box;
 @media screen and (max-width:760px){
 
 padding:100px 0;
+
 }
 `;
 
 
 const InfoWrapper=styled.div`
 display:grid;
+margin-top:200px;
 z-index:1;
 margin-right:auto;
 margin-left:auto;
 padding:0 24px;
 justify-content: center;
+
+@media screen and (max-width:760px){
+    margin-top:0
+}
 
 `;
 
@@ -63,7 +69,7 @@ padding-bottom:60px;
 
 const TopLine=styled.h1`
 color:#01bf71;
-font-size: 16x;
+font-size:16x;
 line-height: 16px;
 font-weight: 700;
 letter-spacing: 1.4px;
@@ -71,7 +77,7 @@ text-transform:uppercase;
 margin-bottom:14px;
 
 @media screen and (max-width:760px){
-    font-size:12px;
+    font-size:15px;
 }
 
 `;

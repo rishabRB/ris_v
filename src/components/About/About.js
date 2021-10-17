@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import {FaReact,FaLinux, FaNodeJs,FaJava} from 'react-icons/fa';
+import {FaReact,FaLinux, FaNodeJs,FaJava, FaDocker} from 'react-icons/fa';
 import {SiJavascript,SiMongodb } from 'react-icons/si';
 
 
@@ -8,7 +8,7 @@ import {SiJavascript,SiMongodb } from 'react-icons/si';
 const AboutSectionWrapper=styled.div`
 background:#010606 ;
 width: 100%;
-height:800px;
+height:700px;
 padding:0 40px;
 box-sizing:border-box;
 
@@ -29,6 +29,7 @@ height:100%;
 padding:20px;
 margin-left:auto ;
 margin-right: auto;
+margin-top:100px;
 display: flex;
 justify-content:center;
 align-items: center;
@@ -108,7 +109,7 @@ text-transform:uppercase ;
 
 const AboutWrapper=styled.p`
 justify-content: center;
-max-width: 420px;
+max-width: 520px;
 align-items: center;
 line-height: 25px;
 font-size:20px;
@@ -166,6 +167,7 @@ const About=({heading,about,image})=>{
                      <SiMongodb/>
                      <FaNodeJs/>
                      <FaJava/>
+                     <FaDocker/>
                    
               </IconWrapperSection>
             </AboutSection>

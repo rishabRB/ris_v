@@ -1,5 +1,5 @@
 import image1 from '../../vendors/image/certificates/CoreJava.jpeg';
-import image2 from '../../vendors/image/certificates/download.jpeg';
+import image2 from '../../vendors/image/certificates/freecodecamp.png';
 import file1 from '../../vendors/image/certificates/CoreJava.pdf'
 
 
@@ -17,9 +17,9 @@ import file1 from '../../vendors/image/certificates/CoreJava.pdf'
      },
      {
         id:2,
-        name:'Microsolt learn',
+        name:'Freecodecamp',
         image:image2,
-        description:'Azure Developer League: Cloud Native Development',
+        description:'Javascript data stucture and Algorithm',
         bottonTitle:'view certificate',
         width:'160px',
         isLink:file1

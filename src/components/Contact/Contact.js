@@ -1,17 +1,20 @@
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import styled from 'styled-components';
-import image from '../../vendors/image/contact.svg'
+import image from '../../vendors/image/constact1.svg'
 
 const ContactSectionWrapper=styled.div`
  width: 100%;
- height: 700px;
- box-sizing: border-box;
- padding:40px;
- padding-top:200px;
+ height:750px;
+ background:url(${(image)});
+ background-repeat:repeat-x;
+ background-position: bottom;
+ background-size: auto;
+ 
 
 @media screen and (max-width:468px){
-  padding-top: 50px;
+  background-size:500%;
 }
 
 `;
@@ -19,53 +22,36 @@ const ContactSectionWrapper=styled.div`
 const Wrapper=styled.div`
 width: 100%;
 height: 100%;
-padding: 20px;
-margin-left: auto;
-margin-right:auto;
-display: flex;
 box-sizing: border-box;
-flex-direction:row;
-align-items: center;
-
-@media screen and (max-width:760px){
-  flex-direction: column;
-}
+padding:150px;
 
 `
 
 const InfoSectionWrapper=styled.div`
  width:100%;
  height: 100%;
- padding: 0 100px;
+ display: flex;
+ flex-direction:column;
+ justify-content:start;
+ text-align: center;
  color:#fff;
 
-@media screen and (max-width:1400px){
-  padding: 0 20px;
-}
 
 `
 
-const SecondWrapper=styled.div`
-width: 100%;
-box-sizing:border-box;
-margin-left:200px;
 
-@media screen and (max-width:760px){
-  margin-left:0;
-}
-
-@media screen and (max-width:960px){
-  margin-left:0;
-}
-
-`
 
 const EmailBtnWrapper=styled.div`
 width: 100%;
+height: 100px;
 display:flex;
+justify-content: center;
+align-items: center;
 box-sizing: border-box;
 margin:20px 0;
-flex-direction: row;
+flex-direction: column;
+
+
 
 @media screen and (max-width:760px){
   margin-left:0;
@@ -76,20 +62,35 @@ flex-direction: row;
 const HeadingWrapper=styled.div`
    width: 100%;
    margin: 5px;
+
+   @media screen and (max-width:468px){
+     width:150px;
+     margin:2px -30px;
+     justify-content: center;
+     text-align: center;
+   }
+
 `;
 
 const Heading=styled.h1`
  font-size:22px;
   color: #01BF71;
   font-weight: 500px;
+  font-style:italic;
   text-transform: uppercase;
+
+@media screen and (max-width:468px){
+  font-size:18px;
+  
+}
+
 `;
 
 
 const BtnWrapper=styled.div`
-   width: 100%;
-   margin: 5px;
    box-sizing: border-box;
+   margin: 20px;
+   width: 200px;
 `;
 
 const Button=styled.a`
@@ -104,15 +105,15 @@ const Button=styled.a`
 `;
 
 const EmailWrapper=styled.div`
-width:200px;
-padding:2px 10px;
+width:150px;
+height:22px;
+padding:2px 20px;
 border: 2px solid #1b7;
 border-radius: 40px;
 `
 
 const IconSectionWrapper=styled.div`
  width: 100%;
- box-sizing:border-box;
  `;
 
 
@@ -120,55 +121,38 @@ const IconSectionWrapper=styled.div`
 
 const IconSection=styled.div`
  box-sizing: border-box;
- margin-top: 20px;
+ width:100%;
  font-size:40px;
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
 
  @media screen and (max-width:468px){
-   font-size: 30px;
+   font-size:40px;
+   width:150px;
+   margin-left:-30px;
  }
+
 `;
 
-const ImageWrapper=styled.div`
-width:100%;
-height: 100%;
-
-@media screen and (max-width:760px){
-    
-    max-width:540px;
-    height: 100%;
-    margin-bottom: 140px;
-    
-    }
-`;
-
-
-const Image=styled.img`
-   width:100%;
-   margin-top:-100px;
-   height: 100%;
-
-  @media screen and (max-width:900px){
-    margin-top:-30px;
-    margin-left :0 ;
+const Link=styled.a`
+ 
+  font-size:40px;
+  color:#fff;
+  margin: 8px;
+  &:hover{
+    font-size:50px
   }
-  
-  @media screen and (max-width:760px){
-    margin-top:50px;
-    margin-left :0 ;
-  }
-  
-  `;
+`
 
 
-
-const Contact=({})=>{
+const Contact=()=>{
     return (
      <>
  <ContactSectionWrapper id="contact">
    <Wrapper>
        <InfoSectionWrapper>
-     <SecondWrapper>    
-       <HeadingWrapper>
+        <HeadingWrapper>
            <Heading>Contact me</Heading>
          </HeadingWrapper>
          <EmailBtnWrapper> 
@@ -176,7 +160,7 @@ const Contact=({})=>{
          bibhuty82@gmail.com
          </EmailWrapper> 
          <BtnWrapper>
-           <Button>SendEMail</Button>
+           <Button href="mailto:bibhuty82@gmail.com" >Send EMail</Button>
          </BtnWrapper>
      </EmailBtnWrapper>
      <IconSectionWrapper>
@@ -184,23 +168,32 @@ const Contact=({})=>{
            <Heading>Get In Touch</Heading>
          </HeadingWrapper>
        <IconSection>
-        <FaGithub style={{margin:'0 10px'}}/>
-        <FaInstagram style={{margin:'0 10px'}}/>
-        <FaLinkedin style={{margin:'0 10px'}}/>
-        <FaTwitter style={{margin:'0 10px'}}/>
+       <Link href='https://github.com/rishabRB'> 
+          <FaGithub style={{margin:'0 5px'}}/>  
+          </Link> 
+          <Link href="https://www.linkedin.com/in/rishab-bibhuty-ab1051193/">
+          <FaLinkedin style={{margin:'0 5px'}} /> 
+          </Link>
+          <Link href="https://www.instagram.com/im_risv/">
+          <FaInstagram style={{margin:'0 5px'}}/> 
+          </Link>
+          <Link href="https://twitter.com/risv92757663">
+          <FaTwitter style={{margin:'0 5px'}} />  
+          </Link>
+          <Link href="https://leetcode.com/ris_V/">
+          <SiLeetcode style={{margin:'0 5px'}} />  
+          </Link>
        </IconSection>
-       </IconSectionWrapper>
-      </SecondWrapper>       
+       </IconSectionWrapper>      
     </InfoSectionWrapper>
-       <InfoSectionWrapper>
-         <ImageWrapper>
-           <Image src={image} />
-        </ImageWrapper>  
-       </InfoSectionWrapper>
-       </Wrapper>
+   </Wrapper>
  </ContactSectionWrapper>
      </>
     )
 }
 
 export default Contact
+
+
+
+

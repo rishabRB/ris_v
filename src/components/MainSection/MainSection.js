@@ -41,6 +41,7 @@ height: 100%;
 width: 100%;
 overflow: hidden;
 
+
 `;
 
 
@@ -98,7 +99,7 @@ font-style: italic;
  font-size: 24px;
  text-align:center;
  font-style:italic;
- width: 100%;
+ width:60%;
 
 
  @media screen and (max-width:760px){
@@ -111,16 +112,16 @@ font-style: italic;
 
  `;
 
-const MainSection = () => {
+const MainSection = ({mainpara,mainHeading}) => {
     return (
       <MainContainer>
           <MainBg>
               <VideoBG autoPlay loop muted src={backgroundvideo} type="video/mp4" />
           </MainBg>
             <MainContent>
-            <MainH1>Hi,I'm Rishab </MainH1>
+            <MainH1>{mainHeading} </MainH1>
                   <MainP>
-                      React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications
+                      {mainpara}
                   </MainP>
               </MainContent>
       </MainContainer>

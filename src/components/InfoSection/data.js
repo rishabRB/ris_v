@@ -1,4 +1,4 @@
-import image1 from '../../vendors/image/About-pic2.svg';
+import image1 from '../../vendors/image/about-pic-2.svg';
 import image2 from '../../vendors/image/undraw_certificate_343v.svg';
 
 
@@ -9,8 +9,8 @@ export const homeObjOne={
      lightText:true,
      lightTextDesc:true,
      topLine:'Projects',
-     heading:'Look at some of my time waste ',
-     subtile:'Get access to our exclusive app that allows you to send unlimited transaction without getting charged any fees ',
+     heading:`"An investment in knowledge pay the best interest -Benjamin Franklin"`,
+     subtile:'I belive project based learning is the best way to improve your skill,So here is all my projects I build during learning',
      buttonLable:'show projects',
      imgStart:false,
      image:image1,
@@ -30,8 +30,8 @@ export const homeObjOne={
    lightText:true,
    lightTextDesc:true,
    topLine:'Certificates',
-   heading:'Some of my achivments',
-   subtile:'Get access to our exclusive app that allows you to send unlimited transaction without getting charged any fees ',
+   heading:`"Success is not an activity but a process"`,
+   subtile:'Here is some of my achivements, I hope many more comes ',
    buttonLable:'Show Certificate',
    imgStart:true,
    image:image2,

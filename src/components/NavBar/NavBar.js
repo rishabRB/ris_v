@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS,animateScroll as scroll} from 'react-scroll';
+import resume from "../../vendors/resume/rishab bibhuty's Resume.pdf"
 import {FaBars} from 'react-icons/fa';
 
 
@@ -131,7 +132,7 @@ font-weight: 600;
 
 `;
 
-const NavBtnLink=styled(LinkR)`
+const NavBtnLink=styled.a`
 
   
   border-radius: 50px;
@@ -187,7 +188,7 @@ const toggleHome=()=>{
                      offset={-80}
                      smooth={true}
                      duration={500}>
-                      Certificate</NavLinks>
+                      Certificates</NavLinks>
                  </NavItem>
                  <NavItem>
                      <NavLinks to='about'
@@ -199,7 +200,7 @@ const toggleHome=()=>{
                       >About</NavLinks>
                  </NavItem>
                  <NavItem>
-                     <NavLinks to='get'
+                     <NavLinks to='contact'
                      spy={true}
                      exact='true'
                      offset={-80}
@@ -211,7 +212,7 @@ const toggleHome=()=>{
                </NavMenu>
                
                  <NavBtn>
-                     <NavBtnLink to="/">Resume</NavBtnLink>
+                     <NavBtnLink href={resume}>Resume</NavBtnLink>
                  </NavBtn>
 
           </NavbarContainer>

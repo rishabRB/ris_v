@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
-import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
+import resume from "../../vendors/resume/rishab bibhuty's Resume.pdf"
 
 const SideBarContainer=styled.aside` 
 
@@ -25,7 +25,7 @@ top:${({isOpen})=>(isOpen ? '0' : '-100%')};
 `;
 
 const Wrapper=styled.div`
-padding:100px;
+padding:0px;
 box-sizing:border-box
 `
 
@@ -90,13 +90,14 @@ display: flex;
 justify-content: center;
 `;
 
-const SidebarBtnLink=styled(LinkR)`
+const SidebarBtnLink=styled.a`
  border-radius: 50px;
  color: #111;
  background: #01bf71;
  text-decoration: none;
  font-size: 16px;
  padding: 12px 30px;
+ font-weight: 600;
  border:none;
  outline:none;
  cursor: pointer;
@@ -122,12 +123,41 @@ const SideBar=({isOpen,toggle})=>{
             </Icon>                                   
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to='about'>About</SideBarLink>
-                    <SideBarLink to='Projects'>Projects</SideBarLink>
-                    <SideBarLink to='Resume'>Resume</SideBarLink>
+                    <SideBarLink to='about'
+                     onClick={toggle} 
+                     spy={true}
+                     exact='true'
+                     offset={-80}
+                     smooth={true}
+                     duration={500}
+                    >About</SideBarLink>
+                    <SideBarLink to='Project'
+                     onClick={toggle}
+                     spy={true}
+                     exact='true'
+                     offset={-80}
+                     smooth={true}
+                     duration={500}
+                    >Projects</SideBarLink>
+                    <SideBarLink to='certificate'
+                     onClick={toggle}
+                     spy={true}
+                     exact='true'
+                     offset={-80}
+                     smooth={true}
+                     duration={500}
+                    >Certificates</SideBarLink>
+                    <SideBarLink to='contact'
+                     onClick={toggle}
+                     spy={true}
+                     exact='true'
+                     offset={-80}
+                     smooth={true}
+                     duration={500}
+                    >Contact</SideBarLink>
                 </SideBarMenu>
                 <SideBarBtn>
-                    <SidebarBtnLink to="/">Send Email</SidebarBtnLink>
+                    <SidebarBtnLink href={resume}>RESUME</SidebarBtnLink>
                 </SideBarBtn>
             </SideBarWrapper>
             </Wrapper>
