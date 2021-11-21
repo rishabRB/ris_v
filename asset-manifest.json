@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ris_v/static/css/main.3a2e8b51.chunk.css",
-    "main.js": "/ris_v/static/js/main.b5908e12.chunk.js",
-    "main.js.map": "/ris_v/static/js/main.b5908e12.chunk.js.map",
+    "main.js": "/ris_v/static/js/main.d818af02.chunk.js",
+    "main.js.map": "/ris_v/static/js/main.d818af02.chunk.js.map",
     "runtime-main.js": "/ris_v/static/js/runtime-main.528e6756.js",
     "runtime-main.js.map": "/ris_v/static/js/runtime-main.528e6756.js.map",
     "static/js/2.6e0bb46b.chunk.js": "/ris_v/static/js/2.6e0bb46b.chunk.js",
@@ -16,12 +16,16 @@
     "static/media/CoreJava.bf0f2c9f.jpeg": "/ris_v/static/media/CoreJava.bf0f2c9f.jpeg",
     "static/media/about-pic-2.c850bdf9.svg": "/ris_v/static/media/about-pic-2.c850bdf9.svg",
     "static/media/about-pic1.206c19bc.svg": "/ris_v/static/media/about-pic1.206c19bc.svg",
+    "static/media/calculator.d10eb3fb.png": "/ris_v/static/media/calculator.d10eb3fb.png",
     "static/media/constact1.6e7ace19.svg": "/ris_v/static/media/constact1.6e7ace19.svg",
     "static/media/covidscreenshot.1533ece1.jpeg": "/ris_v/static/media/covidscreenshot.1533ece1.jpeg",
+    "static/media/emoji.a321fa83.png": "/ris_v/static/media/emoji.a321fa83.png",
     "static/media/freecodecamp.5181cacb.png": "/ris_v/static/media/freecodecamp.5181cacb.png",
+    "static/media/imagehub.5b64e801.png": "/ris_v/static/media/imagehub.5b64e801.png",
     "static/media/monster.416f1970.png": "/ris_v/static/media/monster.416f1970.png",
     "static/media/porfolio.f937fc44.png": "/ris_v/static/media/porfolio.f937fc44.png",
     "static/media/rishab bibhuty's Resume.4cfbf7a8.pdf": "/ris_v/static/media/rishab bibhuty's Resume.4cfbf7a8.pdf",
+    "static/media/ten.81fb83cb.png": "/ris_v/static/media/ten.81fb83cb.png",
     "static/media/undraw_certificate_343v.e926b2c0.svg": "/ris_v/static/media/undraw_certificate_343v.e926b2c0.svg",
     "static/media/video.7d1ea6a9.mp4": "/ris_v/static/media/video.7d1ea6a9.mp4"
   },
@@ -29,6 +33,6 @@
     "static/js/runtime-main.528e6756.js",
     "static/js/2.6e0bb46b.chunk.js",
     "static/css/main.3a2e8b51.chunk.css",
-    "static/js/main.b5908e12.chunk.js"
+    "static/js/main.d818af02.chunk.js"
   ]
 }
