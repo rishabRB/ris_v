@@ -16,7 +16,7 @@ const ProjectData=[
         description:'My personal porfolio website.Build usind React.js and styled-components.',
         bottonTitle:'source code',
         width:'150px',
-        isLink:"https://github.com/rishabRB/Covid-vaccine-check"
+        isLink:"https://github.com/rishabRB/ris_v"
         
      },
      { 
@@ -26,7 +26,7 @@ const ProjectData=[
         description:'Internship project,Image Search Website using React and REST Api ',
         bottonTitle:'source code',
         width:'150px',
-        isLink:'https://rishabrb.github.io/ImageHub/'
+        isLink:'https://github.com/rishabRB/ImageHub'
     
        },
        {
@@ -36,7 +36,7 @@ const ProjectData=[
         description:'Internship project,a UI design of a website using React and styled-components ',
         bottonTitle:'source code',
         width:'150px',
-        isLink:'https://rishabrb.github.io/tenReplica/'
+        isLink:'https://github.com/rishabRB/tenReplica'
 
        },
        {
@@ -46,7 +46,7 @@ const ProjectData=[
         description:'Internship project,Emoji Search website using React  ',
         bottonTitle:'source code',
         width:'150px',
-        isLink:'https://rishabrb.github.io/Emoji/'
+        isLink:'https://github.com/rishabRB/Emoji'
 
        },
    
@@ -76,7 +76,7 @@ const ProjectData=[
         description:'A basic calcultor ',
         bottonTitle:'source code',
         width:'150px',
-        isLink:'https://rishabrb.github.io/Calculator/'
+        isLink:'https://github.com/rishabRB/Calculator'
 
      }
    ,
