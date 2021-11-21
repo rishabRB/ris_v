@@ -60,6 +60,7 @@ const Icon=styled.div`
 
 const CloseIcon=styled(FaTimes)`
 color:#fff;
+
 `;
 
 
