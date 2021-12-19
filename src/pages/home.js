@@ -11,6 +11,7 @@ import About from '../components/About/About';
 import Aboutdata from '../components/About/data'; 
 import ProjectData from '../components/CustomSection/ProjectData'
 import CertificateData from '../components/CustomSection/certificateData';
+import Footer from '../components/Footer/footer';
 
 const Home = () => {
 
@@ -41,6 +42,7 @@ return (
         <CustomSection name="certificate" toggle={toggleCertificate} isShow={isCertificate} Data={CertificateData}/>
         <About {...Aboutdata} />
         <Contact />
+        <Footer />
      </>
     )
 }
